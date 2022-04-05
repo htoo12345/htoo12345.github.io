@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let firstName = "Htoo";
+        let lastName = "Aung Lynn";
+
+        // Show type of variable
+        console.log(typeof(firstName));
+        console.log(typeof(lastName));
+
+        //Show value of variable length
+        console.log(firstName.length);
+        console.log(lastName.length);
+
+        //Change upper case and lower 
+        //character output
+        //range output --- from blank to blank
+        let fullName = firstName.concat(" ",lastName);
+        console.log(fullName);
+        console.log("My name is "+fullName);
+        console.log(fullName[6]);
+        console.log(fullName.toUpperCase());
+        console.log(fullName.toLowerCase());
+        console.log(fullName.substr(9,4));
+
+        //delete start and end space.
+        let welcome = " Welcome to my class. ";
+        console.log(welcome.trim());
+
+        //Search word
+        let ser = "JavaScript is funny!";
+        let res = ser.search("is");
+        console.log(res);
+
+        //Search word and replace
+        let rep = "I want to visit Yangon";
+        let repResult = rep.replace("Yangon","Mandalay");
+        console.log(repResult);
+        console.log(`My name is ${fullName}`);
+
+        //Array
+        let arr = [1,2,3];
+        let arr1 = Array('a','b','c');
+        console.log(arr);
+        console.log(arr1);
+        console.log(arr[2]);
+        console.log(arr1[2]);
+
+        //Mix array
+        let arr2 = [1,2,3,'a','b'['x',45]];
+        console.log(arr2);
+        console.log(arr2[6]);
+
+        //multi dimensional array
+        let multi = [[1,2,3],['z','e','y'],[5,6,'s',]];
+        console.log(multi[1]);
+        console.log(multi[2][2]);
+
+        let fruit = [];
+        fruit[0] = "apple";
+        fruit[1] = "banana";
+        fruit[3] = "mango";
+        console.log(fruit);
+
+        fruit.push["mango"]
+        console.log(fruit);
+
+        fruit.unshift["cherry"];
+        console.log(fruit);
+
+        fruit.pop();
+        console.log(fruit);
+
+        fruit.shift();
+        console.log(fruit);
+
+        fruit.sort();
+        console.log(fruit);
+
+        fruit.reverse();
+        console.log(fruit);
+
+        let fruitString = fruit.toString();
+        console.log(fruitString);
+        console.log(typeof(fruitString));
+        fruit = fruitString.split(",");
+        console.log(fruit);
+        fruit = fruitString.split(" ");
+        console.log(fruit);
+
+        let arrA = [1,2,3];
+        let arrB = ["a","b","c"];
+        let arrC = arrA.concat(arrB);
+        console.log(arrC);
+        let arrD = [...arrA,...arrB];
+    </script>
+</body>
+</html>
