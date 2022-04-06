@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        // create a function
+        function funName(){
+            document.write("<h2>Hello Function</h2>");
+        }
+
+        funName();
+
+        //create a function with parameter
+        function result(num1,num2){
+            let re = num1 + num2
+            document.write(`<h2>${re}</h2>`);
+        }
+
+        result(1,8);
+
+        function sum(n1=90,n2=28){
+            let si = n1 - n2;
+            document.write(`<h2>${si}</h2>`);
+        }
+        sum();
+        sum(78,22);
+
+        //create a object
+        let laptop = {
+            brand : "Apple",
+            cpu : "M1",
+            type: "Mac book pro",
+            price : "$2000",
+        };
+        console.log(laptop);
+        console.log(laptop.brand);
+        console.log(laptop["price"]);
+    </script>
+</body>
+</html>
