@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Data</title>
+</head>
+<body>
+    <table border="1" cellpadding="20" cellspacing="0">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    
+    <br><br>
+
+    <form name="myForm">
+        <!-- get Name -->
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <!-- get age -->
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age">
+        <br><br>
+        <button type="button" onclick="showTable()">Show</button>
+    </form>
+
+    
+
+    <script>
+
+        let myData = "";
+        let i=1;
+        
+        function showTable(){
+         //   alert("Hello");
+
+            
+
+            let name = document.querySelector("#name").value;
+            console.log(name);
+
+            let age = document.querySelector("#age").value;
+            console.log(age);
+
+                myData +=  `<tr>
+                        <td>${i++}</td>
+                        <td>${name}</td>
+                        <td>${age}</td>
+                    </tr>`
+            
+            console.log(myData);
+            let tbody = document.querySelector("#tbody");
+            tbody.innerHTML = myData;
+        }
+    </script>
+</body>
+</html>
