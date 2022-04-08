@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<body>
+    <div id="clock"></div>
+
+    <!-- JS -->
+    <script>
+        function timer(){
+            let time = new Date();
+            console.log(time);
+
+            let hour = time.getHours();
+            console.log(hour);
+
+            let min = time.getMinutes();
+            console.log(min);
+
+            let second = time.getSeconds();
+            console.log(second);
+
+            let day = time.getDay();
+            console.log(day);
+
+            let month = time.getMonth();
+            console.log(month);
+
+            let year = time.getUTCFullYear();
+            console.log(year);
+
+            document.querySelector("#clock").innerHTML = `<h1>${month}.${day}.${year} - ${hour}:${min}:${second}</h1>`;
+        }
+
+        setInterval("timer()",1000);
+    </script>
+</body>
+</html>

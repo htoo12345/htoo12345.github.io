@@ -5,25 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <style>
+        .error{
+            border-color: red;
+        }
+        small{
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <h1>Calculator</h1>
     <form name="calculator">
         <!-- get first number -->
         <label for="firstNumber">First Number</label>
-        <input type="text" name="firstNumber" id="firstNumber">
+        <input type="number" name="firstNumber" id="firstNumber">
+        <small id="firstError"></small>
         <br><br>
         <!-- get second number -->
         <label for="secondNumber">Second Number</label>
-        <input type="text" name="secondNumber" id="secondNumber">
+        <input type="number" name="secondNumber" id="secondNumber">
+        <small id="secondError"></small>
         <br><br>
         <!-- output result -->
         <label for="result">Result</label>
-        <input type="text" name="result" id="result">
+        <input type="number" name="result" id="result" readonly>
         <br><br>
         <button type="button" onclick="add()">Add</button>
 
-        
+        <script>
+            function formValidation(){
+
+                let firstNumber = document.querySelector("#firstNumber");
+                let secondNumber = document.querySelector("#secondNumber");
+
+                let num1 = firstNumber.value;
+                let num2 = secondNumber.value;
+
+                let firstError = document.querySelector("#firstError");
+                let secondError = document.querySelector("#secondError");
+
+                if(num1 === "" || num2 === ""){
+                    removeError();
+                    if(num1 === ""){
+                        //alert("Enter first number is required!");
+                        showError(firstError,firstNumber,"Enter first number is required!");
+                    }
+                    if(num2 === ""){
+                        //alert("Enter second number is required!");
+                        showError(secondError,secondNumber,"Enter second number is required!");
+                    }
+
+                    function showError(numError,numInput,message){
+                        console.log(numError,numInput,message);
+                        numInput.setAttribute("class","error");
+                        numError.innerHTML = message;
+                    }
+
+                }else{
+                    removeError();
+                    return {num1,num2};
+                }
+
+                function removeError(){
+                    firstNumber.removeAttribute("class");
+                    secondNumber.removeAttribute("class");
+                    firstError.innerHTML="";
+                    secondError.innerHTML="";
+                }
+            }
+            function add(){
+
+                let number = formValidation();
+                console.log(number);
+                
+                if(number){
+                
+                    let result = Number(number.num1) + Number(number.num2) ;
+                    console.log(result);
+
+                    document.querySelector("#result").value = result;
+                }
+                
+            }
+        </script>
     </form>
 </body>
 </html>
