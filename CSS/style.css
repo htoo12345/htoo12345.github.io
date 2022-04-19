@@ -1,0 +1,42 @@
+h1{
+    color: rgb(189, 67, 67); 
+    font-family: cursive;
+}
+
+p{
+    /* word-spacing: 40px;
+    line-height: 10px;
+    letter-spacing: 30px; */
+    text-align: justify;
+    text-indent: 70px;
+}
+
+/* universal selector */
+*{
+    margin: 0ch;
+    padding: 0%;
+}
+
+/* Tag / Element selector */
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: lavender;
+}
+
+/* attribute selector */
+a[title="Google"]{
+    text-decoration: none;
+    color: aqua;
+}
+
+#idselector{
+    color: brown;
+    text-indent: 50px;
+    word-spacing: 30px;
+}
+
+.classselector{
+    color: aqua;
+    line-height: 30px;
+}

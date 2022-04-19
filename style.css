@@ -1,0 +1,14 @@
+.heading{
+    color: lightgreen; 
+    font-family: cursive;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hj{
+    color: rgb(189, 67, 67); 
+    font-family: cursive;
+    text-align: left;
+    /* text-indent: 20px; */
+}
+
