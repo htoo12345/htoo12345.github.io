@@ -7,8 +7,8 @@ p{
     /* word-spacing: 40px;
     line-height: 10px;
     letter-spacing: 30px; */
-    text-align: justify;
-    text-indent: 70px;
+    /* text-align: justify;
+    text-indent: 70px; */
 }
 
 /* universal selector */
@@ -39,4 +39,42 @@ a[title="Google"]{
 .classselector{
     color: aqua;
     line-height: 30px;
+}
+
+/* descendent selector */
+.desc a{
+    color: rgb(51, 255, 0);
+}
+
+/* child selector */
+.child>a{
+    color: rgb(255, 238, 0);
+}
+
+/* pseudo selector */
+a:link{
+    color: aqua;
+}
+
+a:hover{
+    color:violet;
+    letter-spacing: 10px;
+}
+
+a:active{
+    color: yellowgreen;
+}
+
+a:visited{
+    color: rgb(255, 251, 0);
+}
+
+/* Target  */
+p:target{
+    color: slateblue;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    line-height: 30px;
+    font-size: large;
+    font-style: oblique;
 }
