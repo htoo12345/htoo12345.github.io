@@ -78,3 +78,41 @@ p:target{
     font-size: large;
     font-style: oblique;
 }
+
+/* border */
+.borderOne{
+    border: 10px double lightblue;
+}
+
+.borderTwo{
+    border-left: 4px solid lawngreen;
+    border-bottom: 4px dashed rosybrown;
+    border-top: 4px double rgba(251, 255, 0, 0.911);
+}
+
+.borderWidth{
+    border-width: 1px 20px;
+    border-style: ridge;
+}
+
+.borderStyle{
+    border-style: dashed solid double ridge;
+    /* Top right bottom left */
+}
+
+/* margin */
+.margin{
+    border: 5px solid salmon;
+    margin: 50px 425px 90px;
+}
+
+.marginTwo{
+    border: 3px solid lavender;
+    margin-right: 100px;
+}
+
+/* padding */
+.padding{
+    border: 5px solid darkkhaki;
+    padding: 60px;
+}
