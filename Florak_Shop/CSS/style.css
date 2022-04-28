@@ -126,3 +126,49 @@
 .btnCart{
     cursor: pointer;
 }
+
+.imgFlowers{
+    background-image: url(../images/background1.jpg);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about div{
+    padding: 70px;
+}
+
+.horizo{
+    width: 30px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.packing{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.imgPacking{
+    width: 45%;
+    float: left;
+    border-radius: 5px;
+}
+
+.packingText{
+    position: relative;
+    left: 50px;
+    width: 88%;
+    text-align: justify;
+}
+
+.fa-circle-arrow-right{
+    padding-right: 10px;
+}
+
+.packingHeader{
+    margin-top: 20px;
+}
