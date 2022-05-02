@@ -131,9 +131,10 @@
     background-image: url(../images/background1.jpg);
     display: grid;
     grid-template-columns: auto auto auto auto;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     margin-top: 50px;
+
 }
 
 .about div{
@@ -150,6 +151,7 @@
 .packingDiv{
     margin-top: 50px;
     margin-bottom: 100px;
+    /* display: inline-block; */
 }
 
 .imgPackingPho{
@@ -159,6 +161,7 @@
 }
 
 .packingTextSS{
+    /* float: right; */
     position: relative;
     left: 50px;
     width: 88%;
@@ -180,7 +183,7 @@
 .service{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: white;
+    background-color:  #d2edf7;
     padding-top: 30px;
     margin-top: 80px;
     padding-left: 30px;
@@ -194,4 +197,28 @@
 
 .service div p b{
     font-size: 20px;
+}
+
+/* footer  */
+.footer{
+    background-color: #212529;
+}
+
+.footer_nav{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding-top: 50px;
+    margin: 20px 20px;
+}
+
+.desgined_by{
+    color: white;
+}
+
+.footer_icon{
+    color: white;
+    display: inline-block;
+    margin: 20px 10px 0px;
+    padding-bottom: 50px;
 }
