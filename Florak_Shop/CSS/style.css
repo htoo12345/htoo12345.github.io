@@ -147,18 +147,18 @@
     margin-bottom: 20px;
 }
 
-.packing{
+.packingDiv{
     margin-top: 50px;
     margin-bottom: 100px;
 }
 
-.imgPacking{
+.imgPackingPho{
     width: 45%;
     float: left;
     border-radius: 5px;
 }
 
-.packingText{
+.packingTextSS{
     position: relative;
     left: 50px;
     width: 88%;
@@ -171,4 +171,27 @@
 
 .packingHeader{
     margin-top: 20px;
+}
+
+.clear{
+    clear: both;
+}
+
+.service{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: white;
+    padding-top: 30px;
+    margin-top: 80px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.service div p{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.service div p b{
+    font-size: 20px;
 }
