@@ -137,7 +137,7 @@
 
 }
 
-.about div{
+.imgFlowers div{
     padding: 70px;
 }
 
@@ -148,39 +148,43 @@
     margin-bottom: 20px;
 }
 
-.packingDiv{
+/* packing  */
+.packing{
     margin-top: 50px;
-    margin-bottom: 100px;
-    /* display: inline-block; */
+    margin-left: 100px;
 }
 
-.imgPackingPho{
+.packing img{
     width: 45%;
     float: left;
-    border-radius: 5px;
 }
-
-.packingTextSS{
-    /* float: right; */
+.packingAbo{
     position: relative;
     left: 50px;
-    width: 88%;
+    width: 90%;
     text-align: justify;
-}
+} 
 
 .fa-circle-arrow-right{
     padding-right: 10px;
 }
 
-.packingHeader{
-    margin-top: 20px;
+.packingAbo h2{
+    /* padding: 10px; */
+    margin-top: 15px;
 }
 
-.clear{
+.packingAbo p{
+    padding: 10px;
+}
+
+
+
+ .clear{
     clear: both;
-}
-
-.service{
+}  
+/* service */
+ .service{
     display: grid;
     grid-template-columns: auto auto auto auto;
     background-color:  #d2edf7;
@@ -221,7 +225,7 @@
     display: inline-block;
     margin: 20px 10px 0px;
     padding-bottom: 50px;
-}
+} 
 
 /* contact page  */
 .contact{
