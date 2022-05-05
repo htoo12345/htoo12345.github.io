@@ -294,3 +294,55 @@ input[type="text"],input[type="email"]{
 .message div iframe{
     margin-top: 70px;
 }
+
+
+/* start shop page  */
+#head{
+    margin-top: 30px;
+    
+}
+#head_left img{
+    float: left;
+    width: 30%;
+    height: 400px; 
+    
+}
+
+#head_right{
+    background-color: #c9e5f0;
+    height: 400px;
+    /* margin-top: 200px; */
+    /* display: inline-block; */
+}
+
+#head_right div{
+    /* border: 1px solid salmon; */
+    position: absolute; 
+    top: 300px;
+    left: 800px;
+    text-align: justify; 
+}
+
+#head_right div h1{
+    /* padding: 10px; */
+    padding-bottom: 10px;
+    font-family: lobster;
+    font-size: 20px;
+    font-weight: unset;
+}
+
+#head_right div button{
+    border: 1px solid #3797b9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#head_right div button:hover{
+    background-color: #3797b9;
+    color: white;
+}
+
+#cln{
+    clear: both;
+}
