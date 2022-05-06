@@ -392,6 +392,10 @@ input[type="text"],input[type="email"]{
 }
 
 /* start about us page  */
+#imgAboutUs{
+    width: 100%; 
+}
+
 #ourStory{
     /* border: 1px solid salmon; */
     margin-top: 30px;
@@ -422,7 +426,7 @@ input[type="text"],input[type="email"]{
 
 /* start about us  */
 #us_holer{
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     margin-top: 30px;
     margin-bottom: 50px;
     margin-left: 10%;
@@ -430,7 +434,7 @@ input[type="text"],input[type="email"]{
 }
 
 #address_us a{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     text-align: center;
 }
 
@@ -438,9 +442,39 @@ input[type="text"],input[type="email"]{
     margin-top: 30px;
     display: grid;
     grid-template-columns: auto auto auto;
+    grid-row-gap: 45px;
 }
 
 #address_us a img{
-    width: 80%;
-    height: 95%;
+    margin-bottom: 10px;
+    width: 85%;
+    height: 100%;
+}
+
+/* start value  */
+#our_value{
+    /* border: 1px solid salmon; */
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
+}
+
+#our_value h1{
+    font-family: lobster;
+    font-size: 40px;
+    font-weight: unset;
+}
+
+#our_value p{
+    text-align: justify;
+}
+
+#our_value h1, #our_value h2, #our_value p{
+    padding: 10px;
+}
+
+#our_value h1, #our_value h2{
+    text-align: center;
 }
