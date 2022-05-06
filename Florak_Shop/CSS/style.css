@@ -346,3 +346,47 @@ input[type="text"],input[type="email"]{
 #cln{
     clear: both;
 }
+
+/* start filder */
+#filder_hole{
+    /* border: 1px solid red; */
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#filder_left{
+    /* border: 1px solid yellow; */
+    padding-top: 5%;
+    /* padding-bottom: 5%; */
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+#filder_right{
+    /* border: 1px solid green; */
+    padding-top: 5%;
+    /* padding-bottom: 5%; */
+    padding-left: 50%;
+    text-transform: uppercase;
+}
+
+#filder_left label, #filder_right label{
+    padding-right: 10px;
+} 
+
+#filder_left select, #filder_right select{
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#filder_right select{
+    border-radius: 5px;
+    border: 1px solid lavender;
+    cursor: pointer;
+}
+
+#filder_right select:hover{
+    background-color: #3797b9;
+    color: white;
+}
