@@ -390,3 +390,57 @@ input[type="text"],input[type="email"]{
     background-color: #3797b9;
     color: white;
 }
+
+/* start about us page  */
+#ourStory{
+    /* border: 1px solid salmon; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+}
+
+#ourStory h1{
+    font-family: lobster;
+    font-size: 40px;
+    font-weight: unset;
+}
+
+#ourStory h1, #ourStory p{
+    padding: 20px;
+}
+
+#ourStory p{
+    font-size: large;
+}
+
+#first_par{
+    font-weight: bold;
+}
+  
+
+/* start about us  */
+#us_holer{
+    border: 1px solid salmon;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#address_us a{
+    border: 1px solid yellow;
+    text-align: center;
+}
+
+#address_us{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#address_us a img{
+    width: 80%;
+    height: 95%;
+}
