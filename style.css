@@ -3,6 +3,16 @@
     padding: 0px;
 }
 
+@font-face {
+    font-family: varela_round;
+    src: url(fonts/Varela_Round/VarelaRound-Regular.ttf);
+}
+
+@font-face {
+    font-family: signika_negative;
+    src: url(fonts/Signika_Negative/static/SignikaNegative-Bold.ttf);
+}
+
 body{
     background-color: lavenderblush;
 }
@@ -42,15 +52,19 @@ body{
     display: inline-block;
     padding-left: 20px;
     padding-bottom: 20px;
+    font-family: signika_negative;
+    color: lightcoral;
+    font-size: large;
 }
 
 .assig_group a:hover{
+    font-family: varela_round;
     color: #3797b9;
     transform: translate(4px, -5px);
     transition-duration: 1s;
 }
 
 .assig_group h4{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
