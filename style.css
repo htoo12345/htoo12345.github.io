@@ -13,8 +13,23 @@
     src: url(fonts/Signika_Negative/static/SignikaNegative-Bold.ttf);
 }
 
+@font-face {
+    font-family: pacifico;
+    src: url(fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: macondo;
+    src: url(fonts/Macondo/Macondo-Regular.ttf);
+}
+
 body{
     background-color: lavenderblush;
+}
+
+nav{
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 .heading{
@@ -22,17 +37,6 @@ body{
     font-family: cursive;
     text-align: center;
     text-transform: uppercase;
-}
-
-.hj{
-    color: rgb(189, 67, 67); 
-    font-family: cursive;
-    text-align: left;
-    /* text-indent: 20px; */
-}
-
-#footer{
-    text-align: right;
 }
 
 .container{
@@ -47,6 +51,13 @@ body{
     padding: 30px;
 }
 
+.assig_group h4{
+    color: rgb(189, 67, 67); 
+    font-family: cursive;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
 .assig_group a{
     text-decoration: none;
     display: inline-block;
@@ -58,13 +69,25 @@ body{
 }
 
 .assig_group a:hover{
-    font-family: varela_round;
-    color: #3797b9;
-    transform: translate(4px, -5px);
-    transition-duration: 1s;
+    font-family: pacifico;
+    color: red;
+    font-size: 25px;
 }
 
-.assig_group h4{
-    padding-bottom: 20px;
+.assig_group a:active{
+    font-family: macondo;
+    color: yellow;
 }
+
+#footer{
+    text-align: right;
+    margin: 20px;
+}
+
+#footer a{
+   padding: 20px;
+   text-decoration: none;
+}
+
+
 
