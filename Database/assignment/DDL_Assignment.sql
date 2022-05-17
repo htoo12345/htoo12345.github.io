@@ -16,7 +16,7 @@ phoneNo INT UNIQUE NOT NULL
 --Assignment 2
 CREATE DATABASE shopDB;
 
-CREATE TABLE salesPeople(
+CREATE TABLE SalesPeople(
 Snum INT,
 Sname VARCHAR(50),
 City VARCHAR(50),
@@ -24,7 +24,7 @@ Comm DECIMAL(3,2),
 );
 
 
-CREATE TABLE customers(
+CREATE TABLE Customers(
 Cnum INT,
 Cname VARCHAR(50),
 City VARCHAR(50),
@@ -33,7 +33,7 @@ Snum INT
 );
 
 
-CREATE TABLE orders(
+CREATE TABLE Orders(
 Onum INT,
 Amt DECIMAL(7,2),
 Odate DATE,
