@@ -10,7 +10,7 @@ int main()
     cout << "How many number : ";
     cin >> c;
 
-    cout << "Enter number : ";
+    cout << "Enter number : " << endl;
     for (int i = 0; i < c; i++)
     {
         cin >> j;
