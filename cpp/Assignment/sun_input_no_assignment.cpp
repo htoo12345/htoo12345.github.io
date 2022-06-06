@@ -2,26 +2,30 @@
 #include<string>
 using namespace std;
 
-
 int main()
-{   
-    //declare variable and assign
-    int no, sum = 0, count;
+{
+    int no[20];
+    int j ,sum = 0, c;
+    
+    cout << "How many number : ";
+    cin >> c;
 
-    // get how many input number for limit
-    cout << "How many input number : ";
-    cin >> count;
-
-    // sum(input)
-    cout << "Enter a number : " << endl;
-    for (int i = 0; i < count; i++)
+    cout << "Enter number : ";
+    for (int i = 0; i < c; i++)
     {
-        cin >> no;
-        sum += no;
+        cin >> j;
+        no[i] =j;
+        sum += j;
     }
     
-    //output
-    cout << "The sum of digit of " << no << " = " << sum;
+    cout << "The sum of digit of " ;
 
-    return 0;
+    for (int i = 0; i < c; i++)
+    {
+        cout << no[i];
+    }
+
+    cout << " is " << sum;
+
+    return 0;    
 }
