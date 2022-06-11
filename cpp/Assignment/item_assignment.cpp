@@ -1,12 +1,13 @@
 #include<iostream>
 using namespace std;
 
-int main ()
-{
-    int item_barcode[4];
-    string item_name[4];
-    float item_price[4];
+// global array delcaration
+int item_barcode[4];
+string item_name[4];
+float item_price[4];
 
+void TakeData ()
+{
     // take data from user
     cout << endl << "--------- Enter Data ---------" << endl;
     for (int j = 0; j < 4; j++)
@@ -31,7 +32,11 @@ int main ()
         
         cout << endl;
     }
+}
 
+// show data
+void ShowData() 
+{
     //output
     cout << endl << "------------- All Item ------------" << endl;
     for (int j = 0; j < 1; j++)
@@ -73,9 +78,12 @@ int main ()
         
         cout << endl;
     }
+}
 
+//price greater than 300
+void CheckPrice()
+{
     cout << endl << "-------------- Item Price > 300 ----------------" << endl;
-    //int total = 0;
     for (int j = 0; j < 4; j++)
     {
         if (item_price[j] > 300)
@@ -92,6 +100,11 @@ int main ()
         }
         
     }
+}
+
+//Search barcode
+void SearchBarcode()
+{
     cout << "----------------------------------------------" << endl;
     int barCode;
     cout << "Enter barCode : ";
@@ -121,8 +134,21 @@ int main ()
     }
     else
        cout << barCode << " does not exit.";
+}
+
+int main ()
+{
     
- 
+    //take data
+    TakeData();
+    //show data or output all data
+    ShowData();
+    //price greater than 300
+    CheckPrice();
+    //Search Barcode
+    SearchBarcode();  
+
+    return 0;
 }
 
     
