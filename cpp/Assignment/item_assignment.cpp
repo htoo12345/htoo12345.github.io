@@ -119,11 +119,11 @@ void SearchBarcode()
                 {
                     cout << "Code : " << item_barcode[i] << endl;
                 }
-                for (int s = 0; s <= j; s++)
+                for (int s = j; s <= j; s++)
                 {
                     cout << "Name : " << item_name[s] << endl;
                 }
-                for (int f = 0; f <= j; f++)
+                for (int f = j; f <= j; f++)
                 {
                     cout << "Pric : " << item_price[f] << endl;
                 }
