@@ -6,6 +6,8 @@ void verifyEvenOrOdd();
 void verifyPositiveOrNegative();
 void displayMultiplication(int);
 bool checkLogin(string, string);
+
+//------------------------------
 void chooseProcess();
 void tryAnother();
 
