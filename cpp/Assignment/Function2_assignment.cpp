@@ -7,20 +7,11 @@ void verifyPositiveOrNegative();
 void displayMultiplication(int);
 bool checkLogin(string, string);
 void chooseProcess();
+void tryAnother();
 
 int main ()
 {   
-    char ask;
-    
-    do
-    {
-        chooseProcess();
-
-        cout << "\n-------------------------------------\n";
-        
-        cout << "Try another (y/n) : ";
-        cin >> ask;
-    } while (ask == 'y');
+    tryAnother();
     
     return 0;
 }
@@ -137,4 +128,19 @@ void chooseProcess ()
         goto again;
         break;
     }
+}
+
+void tryAnother ()
+{
+    char ask;
+    
+    do
+    {
+        chooseProcess();
+
+        cout << "\n-------------------------------------\n";
+        
+        cout << "Try another (y/n) : ";
+        cin >> ask;
+    } while (ask == 'y');
 }
