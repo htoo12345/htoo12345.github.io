@@ -54,8 +54,9 @@ class Student
 
 int main()
 {
-    int no, s_no;
+    int no, s_no, to = 0, ho = 0;
     string name, course, result;
+    
 
     Student s[5];
 
@@ -101,30 +102,45 @@ int main()
         cout << endl;        
     }
     
-    cout << "Enter roll number for searching : ";
+    cout << "\n\nEnter roll number for searching : ";
     cin >> s_no;
 
     cout << endl;
-
-    if (s[0].searchData(s_no) == true || s[1].searchData(s_no) == true || s[2].searchData(s_no) == true || s[3].searchData(s_no) == true || s[4].searchData(s_no) == true)
+    
+    for (int i = 0; i < 5; i++)
     {
-        for (int i = 0; i < 5; i++)
+        if (ho > 0)
+            break;
+
+        if (s[i].searchData(s_no) == true)
         {
-            if (s[i].searchData(s_no) == true)
+            ho++;
+
+            for (int i = 0; i < 5; i++)
             {
-                for (int j = i; j <= i ; j++)
+                if (s[i].searchData(s_no) == true)
                 {
-                    cout << "Name : " << s[j].getName() << endl;
-                    cout << "Course : " << s[j].getCourse() << endl;
-                }
-                
-            }            
-            
+                    ho++;
+
+                    for (int j = i; j <= i ; j++)
+                    {
+                        cout << "Name : " << s[j].getName() << endl;
+                    }
+                    for (int u = i; u <= i; u++)
+                    {
+                        cout << "Course : " << s[u].getCourse() << endl;
+                    }
+                }                           
+            }
         }
-        
+        else
+            to++;
     }
-    else
-        cout << endl << s_no << " does not exist.";
+       
+    
+
+    if (to >= 5) 
+        cout << s_no << " does not exist."; 
     
     return 0;    
 }
