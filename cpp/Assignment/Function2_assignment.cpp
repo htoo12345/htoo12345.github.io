@@ -144,5 +144,5 @@ void tryAnother ()
         
         cout << "Try another (y/n) : ";
         cin >> ask;
-    } while (ask == 'y');
+    } while (tolower(ask) == 'y');
 }
