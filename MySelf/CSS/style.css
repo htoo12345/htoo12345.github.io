@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#arrow{
+    /* border: 2px solid salmon; */
+    
+    margin: 200px;
+    padding: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
