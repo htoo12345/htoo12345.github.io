@@ -1,0 +1,32 @@
+@font-face {
+    font-family: IBM;
+    src: url(../../../../MySelf/Font/IBMPlexSerif-Bold.ttf);
+}
+#container{
+    margin: 100px;
+    padding: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: aquamarine;
+}
+input{
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+#category{
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+label{
+    color: lightcoral;
+}
+input, button, label{
+    font-family: IBM;
+}
