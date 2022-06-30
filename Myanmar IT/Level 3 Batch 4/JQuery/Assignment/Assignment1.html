@@ -7,6 +7,10 @@
     <title>Assignemnt 1 JQuery</title>
 
     <style>
+        @font-face {
+            font-family: IBM;
+            src: url(../../../../MySelf/Font/IBMPlexSerif-Bold.ttf);
+        }
         #container{
             margin: 200px;
             padding: 50px;
@@ -32,6 +36,12 @@
             margin-left: 10px;
             border-radius: 10px;
         }
+        label{
+            color: lightcoral;
+        }
+        input, button, label{
+            font-family: IBM;
+        }
     </style>
 
 </head>
@@ -42,8 +52,8 @@
             <br>
             <input type="password" name="password" id="password" placeholder="Age">
             <br>
-            <input type="radio" name="relation" value="Single" id="single" checked> Single
-            <input type="radio" name="relation" value="Marrey" id="marry"> Marriaged
+            <input type="radio" name="relation" value="Single" id="single" checked> <label for="single">Single</label>
+            <input type="radio" name="relation" value="Marrey" id="marry"> <label for="Marriaged">Marriaged</label>
             <br>
             <input type="text" name="spouse" id="spouse" placeholder="Spouse">
             <br>
