@@ -18,8 +18,10 @@
             background-color: aquamarine;
         }
         input{
-            padding: 3px;
+            padding: 15px;
             margin: 10px;
+            border: none;
+            border-radius: 10px;
         }
         button{
             background-color: lightcoral;
@@ -40,7 +42,7 @@
             <br>
             <input type="password" name="password" id="password" placeholder="Age">
             <br>
-            <input type="radio" name="relation" value="Single" id="single"> Single
+            <input type="radio" name="relation" value="Single" id="single" checked> Single
             <input type="radio" name="relation" value="Marrey" id="marry"> Marriaged
             <br>
             <input type="text" name="spouse" id="spouse" placeholder="Spouse">
@@ -57,12 +59,12 @@
 
             $("#single").on("click", function(){
                 $("#spouse").hide(100);
-            })
+            });
 
             $("#marry").on("click",function (){
                 $("#spouse").show(100);
-            })
-        })
+            });
+        });
     </script>
 </body>
 </html>
