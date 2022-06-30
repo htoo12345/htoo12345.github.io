@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignemnt 1 JQuery</title>
+
+    <style>
+        #container{
+            margin: 200px;
+            padding: 50px;
+
+            display: flex;
+            justify-content: center;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        input{
+            padding: 3px;
+            margin: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <form action="">
+            <input type="text" name="username" id="username">
+            <br>
+            <input type="password" name="password" id="password">
+            <br>
+            <input type="radio" name="relation" value="Single" id="single"> Single
+            <input type="radio" name="relation" value="Marrey" id="marry"> Marrey
+            <br>
+            <input type="text" name="year" id="year">
+        </form>
+    </div>
+
+    <!-- script  -->
+    <script src="../jquery.min.js"></script>
+    <script>
+        $(function (){
+            let sin = $("input[value='Single']").val();
+            let mar = $("input[value='Marrey']").val();
+
+            console.log(sin);
+            console.log(mar);
+
+            $("#single").on("click", function(){
+                $("#year").hide(100);
+            })
+
+            $("#marry").on("click",function (){
+                $("#year").show(100);
+            })
+        })
+    </script>
+</body>
+</html>
