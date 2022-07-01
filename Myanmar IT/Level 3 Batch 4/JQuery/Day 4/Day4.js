@@ -9,6 +9,22 @@ $(function (){
         $("#spouse").show(100);
     });
 
+    $("select[name='category']").on("change", function(){
+        var select = $(this).val();
+        var discount = 0;
+        if(select == 1){
+            discount = 15;
+        } else if (select == 2){
+            discount = 20;
+        } else if (select == 3){
+            discount = 30;
+        } else if(select == 4){
+            discount = 11;
+        }
+
+        $("input[name='discount']").val(discount);
+    })
+
     $("form").on("submit",function(e){
         e.preventDefault();
         let name = $("input[name='username']").val();

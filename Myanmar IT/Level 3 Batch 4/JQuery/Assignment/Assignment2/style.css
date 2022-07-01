@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: IBMP;
+    src: url(../../../../../MySelf/Font/IBMPlexSerif-Bold.ttf);
+}
+
+body{
+    background-color: lightgoldenrodyellow;
+}
+
+#container{
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#hobbies{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#hobbies div{
+    padding: 5px;
+}
+
+#hobbies div input, #hobbies div label{
+    cursor: pointer;
+}
+
+#container form input, #container form label{
+    font-family: IBMP;
+}
+
+#name{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+#submit{
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    color: lemonchiffon;
+    background-color: lightcoral;
+    margin-right: 250px;
+}
