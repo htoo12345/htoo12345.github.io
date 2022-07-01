@@ -3,14 +3,77 @@
     padding: 0;
 }
 
-#arrow{
-    /* border: 2px solid salmon; */
-    
-    margin: 200px;
-    padding: 100px;
+@font-face {
+    font-family: IBMP_BoldItalic;
+    src: url(../Font/IBMPlexSerif-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: IBMP_SemiBlod;
+    src: url(../Font/IBMPlexSerif-SemiBold.ttf);
+}
+
+body{
+    background-image: url(../IMG/forest-nature.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+main{
+    margin-top: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
     align-items: center;
-    align-content: center;
+    align-content: space-around;
+
+    /* box-shadow: 10px 10px 5px 1px lightcoral; */
+}
+
+main #nav_id{
+    /* border: 5px double darkgoldenrod; */
+    width: 100%;
+    text-align: center;
+}
+
+main #main_id{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* border: 5px solid saddlebrown; */
+} 
+
+main #footer_id{
+    width: 100%;
+    /* border: 5px solid salmon; */
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: space-around;
+}
+
+main #nav_id h1{
+    font-family: IBMP_SemiBlod;
+    color: lightblue;
+    margin-bottom: 5px;
+}
+
+main #nav_id p{
+    font-family: IBMP_BoldItalic;
+}
+
+main #main_id img{
+    width: 100%;
+    height: 400px;
+    padding-top: 4px;
+}
+
+main #footer_id a img{
+    width: 100%;
+    height: 70px;
 }
