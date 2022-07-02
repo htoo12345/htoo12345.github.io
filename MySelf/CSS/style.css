@@ -77,3 +77,9 @@ main #footer_id a img{
     width: 100%;
     height: 70px;
 }
+
+a:hover{
+    position: relative;
+    top: -3px;
+    left: 7px;
+}
