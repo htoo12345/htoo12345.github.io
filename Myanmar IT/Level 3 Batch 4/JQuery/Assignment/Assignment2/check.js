@@ -14,17 +14,17 @@ $(function(){
         let hp = new Array();
 
         if (cooking == "cooking") {
-            //console.log(cooking);
+            console.log(cooking);
             hp[0] = cooking;
         } 
 
         if (drawing == "drawing") {
-            //console.log(drawing);
+            console.log(drawing);
             hp[1] = drawing;
         }
 
         if (writting == "writting") {
-            //console.log(writting);
+            console.log(writting);
             hp[2] = writting;
         }
 
