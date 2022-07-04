@@ -3,25 +3,54 @@ $(function(){
         data.preventDefault();
 
         var name = $("input[name='name']").val();
-        var hobbies = $("input[name='hobbies']:checked").val();
-        var cooking = $("#cooking").val();
-        var drawing = $("#drawing").val();
-        var writting = $("#writting").val();
-        var dance = $("#shopping").val();
-        var singing = $("#singing").val();
-        var acting = $("#acting").val();
+        var cooking = $("#cooking:checked").val();
+        var drawing = $("#drawing:checked").val();
+        var writting = $("#writting:checked").val();
+        var dance = $("#dance:checked").val();
+        var shopping = $("#shopping:checked").val();
+        var singing = $("#singing:checked").val();
+        var acting = $("#acting:checked").val();
         
-        //console.log(`${name}, ${cooking}, ${drawing}, ${writting}, ${dance}, ${singing}, ${acting}`);
-        var doing[5];
-        doing[0] = `I am ${name}.\n`;
-        if (hobbies == "cooking"){
-            doing[1] += `I'm ${cooking}.\n`;
+        let hp = new Array();
+
+        if (cooking == "cooking") {
+            //console.log(cooking);
+            hp[0] = cooking;
+        } 
+
+        if (drawing == "drawing") {
+            //console.log(drawing);
+            hp[1] = drawing;
         }
-        if (hobbies == "drawing"){
-            doing[2] += `I'm ${drawing}.\n`;
+
+        if (writting == "writting") {
+            //console.log(writting);
+            hp[2] = writting;
         }
+
+        if (dance == "dance") {
+            console.log(dance);
+            hp[3] = dance;
+        }
+
+        if (shopping == "shopping") {
+            console.log(shopping);
+            hp[4] = shopping;
+        }
+
+        if (singing == "singing") {
+            console.log(singing);
+            hp[5] = singing;
+        }
+
+        if (acting == "acting") {
+            console.log(acting);
+            hp[6] = acting;
+        }
+
+        let hp_arr = hp.filter(Boolean);
         
-        alert(doing);
-        console.log(doing);
+        alert(`I'm ${name}.\nHoppies : ${hp_arr}`);
+        
     })
 })
