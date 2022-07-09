@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&   display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        nav{
+
+            margin-top: 100px;
+            margin-bottom: 50px;
+            /*border: 4px solid rebeccapurple; */
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav div{
+            /* border: 5px double dodgerblue; */
+
+            width: 250px;
+            height: 50px;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly; 
+            /* align-items: baseline; */
+            align-content: center;
+        }
+        button{
+            margin-right: 5px;
+            width: 60px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid #BFBFBF;
+            box-shadow: 5px 5px 1px #aaaaaa;
+            cursor: pointer;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        button:hover{
+            background-color: lightblue;
+            box-shadow: 5px 5px 1px #aaaaaa;
+        }
+        main{
+            /* border: 5px dotted saddlebrown;  */
+            margin-left: 150px;
+            margin-right: 150px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        main #container{
+            /* border: 4px solid springgreen;  */
+            /* height: 400px; */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-around;
+            font-family: 'IBM Plex Serif', serif;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        span{
+            color: red;
+            font-family: 'IBM Plex Serif', serif;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <button id="btn_home">Home</button>
+            <button id="btn_profice">Profice</button>
+            <button id="btn_contact">Contact</button>
+            <button id="btn_shop">
+                <a href=""></a>
+            </button>
+        </div>
+    </nav>
+    <main>
+        <div id="container">
+            <div id="div_home">
+                <p>
+                    <span>HOME</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed illo assumenda dignissimos perspiciatis, eligendi iste aperiam nisi! Maiores officiis ratione cupiditate illum totam. Hic inventore sequi voluptate similique recusandae at.
+                </p>
+            </div>
+            <div id="div_profile">
+                <p>
+                    <span>PROFILE</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptatem quae modi, doloribus saepe facilis a est consequuntur accusamus ea consectetur. Odit deserunt, dolor nihil nostrum non placeat optio dolorem.
+                </p>
+            </div>
+            <div id="div_contact">
+                <p>
+                    <span>CONTACT</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ad aspernatur reprehenderit quos itaque, esse eveniet rerum aliquam eaque, commodi modi quod dolores. Ipsam doloremque autem, omnis possimus error neque!
+                </p>
+            </div>
+            <div id="div_shop">
+                <a href="Project/index.html.MyProduct_main"></a>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(function(){
+            let home = $("#div_home");
+            let profile = $("#div_profile");
+            let contact = $("#div_contact");
+
+            profile.hide();
+            contact.hide();
+
+            $("#btn_home").on("click",function(){
+                profile.hide();
+                contact.hide();
+                home.show();
+            })
+
+            $("#btn_profice").on("click",function(){
+                home.hide();
+                contact.hide();
+                profile.show();
+            })
+
+            $("#btn_contact").on("click",function(){
+                profile.hide();
+                home.hide();
+                contact.show();
+            })
+        })
+    </script>
+</body>
+</html>

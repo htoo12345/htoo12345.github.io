@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div id="nav_left" class="navbar">
+            <a href="">
+                <img src="" alt="">
+            </a>
+        </div>
+        <div id="nav_right" class="navbar">
+            <ul>
+                <li>
+                    <a href="#home" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a href="#shop">Shop</a>
+                </li>
+                <li>
+                    <a href="#cart">Cart</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <!-- home  -->
+        <div id="home" class="content">
+            <h2>Home</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam asperiores, unde facere odio blanditiis nihil cupiditate, dolor et, culpa cumque eos eligendi velit. Explicabo in quaerat excepturi possimus eos consequatur.
+            </p>
+        </div>
+
+        <!-- contect  -->
+        <div id="contact" class="content">
+            <h2>Contact</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis fuga deserunt sit provident saepe natus eos, eaque reiciendis porro, nemo commodi atque consequuntur, quis autem sequi. Numquam porro hic et.
+            </p>
+        </div>
+
+        <!-- blog  -->
+        <div id="blog" class="content">
+            <h2>Blog</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A doloremque officiis ex? Dignissimos unde fugiat numquam voluptate quod distinctio ut quas autem fugit soluta! Dicta, ipsum quasi. Illum, dolorum amet!
+            </p>
+        </div>
+
+        <!-- shop  -->
+        <div id="shop" class="content">   
+            <h2>My Product</h2>         
+            <div id="product_container">
+                <div id="product">
+                    <img src="Product Image/Product1.jpg" alt="Product1">
+                    <h4>Product One</h4>
+                    <p>$300</p>
+                    <input type="submit" value="Add to Cart" class="sub_AtC" data-id="1" data-name="item1" data-price="300">
+                </div>
+    
+                <div id="product">
+                    <img src="Product Image/Product2.jpg" alt="product2">
+                    <h4>Product Two</h4>
+                    <p>$500</p>
+                    <input type="submit" value="Add to Cart" class="sub_AtC" data-id="2" data-name="item2" data-price="500">
+                </div>
+    
+                <div id="product">
+                    <img src="Product Image/Product3.jpg" alt="product3">
+                    <h4>Product Three</h4>
+                    <p>$250</p>
+                    <input type="submit" value="Add to Cart" class="sub_AtC" data-id="3" data-name="item3" data-price="250">
+                </div>
+
+                <div id="product">
+                    <img src="Product Image/Product4.jpg" alt="product4">
+                    <h4>Product Four</h4>
+                    <p>$100</p>
+                    <input type="submit" value="Add to Cart" class="sub_AtC" data-id="4" data-name="item4" data-price="100">
+                </div>
+    
+                <div id="product">
+                    <img src="Product Image/Product5.jpg" alt="product5">
+                    <h4>Product Five</h4>
+                    <p>$50</p>
+                    <input type="submit" value="Add to Cart" class="sub_AtC" data-id="5" data-name="item5" data-price="50">
+                </div>
+    
+                <div id="product">
+                    <img src="Product Image/Product6.jpg" alt="product6">
+                    <h4>Product Six</h4>
+                    <p>$800</p>
+                    <input type="submit" value="Add to Cart" class="sub_AtC" data-id="6" data-name="item6" data-price="800">
+                </div>
+            </div>
+        </div>
+
+        <!-- cart  -->
+        <div id="cart" class="content">
+            <h2>Cart</h2>
+            <div>
+                <table>
+                    <thead>
+                        <th>
+                            <td>No</td>
+                            <td>Name</td>
+                            <td>Price</td>
+                            <td>Qty</td>
+                            <td>Total</td>
+                        </th>
+                    </thead>
+                    <tbody id="cart_item">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="../jquery.min.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html>

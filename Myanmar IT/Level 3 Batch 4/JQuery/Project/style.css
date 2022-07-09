@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: IMB_Blod;
+    src: url(font/IBMPlexSerif-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: IMB_Regular;
+    src: url(font/IBMPlexSerif-Regular.ttf);
+}
+
+h2,h4{
+    font-family: IMB_Blod;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: IMB_Regular;
+    padding-left: 20px;
+}
+
+/* nav  */
+nav{
+    /* border:1px solid salmon; */
+    margin: 30px 250px 10px 250px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: lightblue;
+}
+a.active{
+    color: #0037ff;
+    border-bottom: 1px solid red;
+}
+#nav_right ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* main  */
+main{
+    /* border: 1px solid darkblue; */
+    margin: 30px 250px 10px 250px;
+    /* display: none; */
+}
+
+.content{
+    display: none;
+    
+}
+
+#product_container{
+    width: 800px;
+    margin: 10px 0 0 90px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+}
+
+input[type="submit"]{
+    font-family: IMB_Regular;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: oldlace;
+    color: black;
+
+    border: 1px solid #BFBFBF;
+    box-shadow: 5px 5px 1px #aaaaaa;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    /* font-size: large; */
+    color: orchid;
+
+    position: relative;
+    top: -3px;
+    left: 7px;
+}
+
+img{
+    border-radius: 6px;
+    width: auto;
+    height: 90px;
+}
