@@ -19,11 +19,13 @@ $(function () {
         var id = $(this).data("id");
         var name = $(this).data('name');
         var price = $(this).data("price");
+        var qty = 1;
 
         var item = {
-            item_id: id,
-            item_name: name,
-            item_price: price
+            id: id,
+            name: name,
+            price: price,
+            qty: qty
         }
 
         console.log(item);
@@ -32,11 +34,24 @@ $(function () {
 
         if(!cart){
             var item_array = new Array();
+            item_array.push(item);
         } else {
-            var item_array = JSON.parse(cart)
+            var item_array = JSON.parse(cart);
+
+            for (let i = 0; i < item_array.length; i++) {
+                //const element = item_array[i];
+                if (item_array[i].id === id) {
+                    item_array[i].qty += qty++;
+                } else {
+                    var add = true;
+                }
+            }
         }
 
-        item_array.push(item);
+        if (add == true) {
+            item_array.push(item);
+        }
+
 
         localStorage.setItem("cart",JSON.stringify(item_array));
         getData();
@@ -48,10 +63,13 @@ $(function () {
         
         if(!cart){
             data += `Your Cart is Empty!`;
+            $("#empty_div").html(data);
         } else {
             var cart_array = JSON.parse(cart);
             var total = 0;
             $.each(cart_array, function (i,v){
+                total += v.qty * v.price;
+
                 data += `<tr>
                         <td>${(i+1)}</td>
                         <td>${v.name}</td>
@@ -60,8 +78,15 @@ $(function () {
                         <td>${v.qty*v.price}</td>
                         </tr>`
             })
+
+            data += `<tr>
+                        <td colspan = "4" id="total_td"> Total </td>
+                        <td>${total}</td>
+                    </tr>`
+
+            $("#cart_item").html(data);
         }
 
-        $("#cart_item").html(data);
+        
     }
 })

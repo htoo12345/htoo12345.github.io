@@ -92,3 +92,20 @@ img{
     width: auto;
     height: 90px;
 }
+
+#empty_div{
+    display: flex;
+    justify-content: center;
+}
+
+#empty_div table{
+    width: 50%;
+    /* text-align: center; */
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
