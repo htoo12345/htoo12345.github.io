@@ -40,6 +40,8 @@ $(function () {
             text += `<input type="text${i+1}" name="${name}${i+1}" class="input_set">`;
             $("#text_box").html(text);
         }
+
+        $("#btn_download").hide();
     });
     
     //click btn input text
