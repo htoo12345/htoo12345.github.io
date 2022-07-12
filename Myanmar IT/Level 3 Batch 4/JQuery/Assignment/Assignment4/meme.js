@@ -1,5 +1,28 @@
 $(function () {
     $("#btn_download").hide();
+    $("#btn_click").hide();
+    $("#btn_Ok").show();
+
+    //first photo click
+    $("#btn_Ok").on("click", function () {
+        var te1 = $("input[type='text1']").val();
+        var te2 = $("input[type='text2']").val();
+        //post
+        $.post("https://api.imgflip.com/caption_image",{
+            template_id : "181913649",
+            username : "hellokitty445",
+            password : "stawberry",
+            text0 : te1,
+            text1 : te2
+        },function(resp){
+            // console.log(resp);
+            if (resp.success){
+                var edit_photo = `<img src="${resp.data.url}"/>`;
+                $(".final_photo_meme").html(edit_photo);
+            }
+        });
+    })
+
 
     //get
     $.get("https://api.imgflip.com/get_memes", function (params) {
@@ -16,8 +39,8 @@ $(function () {
     
     //selected image as show
     $("#all_item").on("click", ".photo_meme", function (para) {
-        
-
+        $("#btn_Ok").hide();
+        $("#btn_click").show();
 
         var url = $(this).data("url")
         var id = $(this).data("id");
@@ -47,8 +70,8 @@ $(function () {
     
     //click btn input text
     $("#btn_click").on("click",function () {
-        
-
+        $("#btn_Ok").hide();
+        $("#btn_click").show();
 
         var selected_meme_name = $(".selected_meme").data("name");
         var selected_meme_url = $(".selected_meme").data("url");
@@ -81,6 +104,8 @@ $(function () {
 
     //download btn
     $("#btn_download").on("click", function () {
+        $("#btn_Ok").hide();
+        $("#btn_click").show();
         var url = $(".final_photo_meme img").data("url");
         var name = $(".final_photo_meme img").data("name");
         //alert(url);
