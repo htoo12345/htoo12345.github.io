@@ -28,7 +28,7 @@ SELECT * FROM customers WHERE Cname LIKE 'C%';
 SELECT * FROM customers WHERE Snum = 1001 OR Snum = 1002 OR Snum = 1007;
 
 /*No.9 Assignment*/
-SELECT * FROM salespeople WHERE Comm != .10 OR Comm != .13 OR Comm != .15;
+SELECT * FROM salespeople WHERE Comm != .10 AND Comm != .13 AND Comm != .15;
 
 /*No.10 Assignment*/
 SELECT DISTINCT City FROM customers ;
