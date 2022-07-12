@@ -93,12 +93,12 @@ img{
     height: 90px;
 }
 
-#empty_div{
+#empty_div, #table_div{
     display: flex;
     justify-content: center;
 }
 
-#empty_div table{
+#table_div table{
     width: 50%;
     /* text-align: center; */
     border-collapse: collapse;

@@ -12,12 +12,13 @@ $(function () {
             }   
             $("#all_item").html(data);
         }
-
-        
     });
     
     //selected image as show
     $("#all_item").on("click", ".photo_meme", function (para) {
+        
+
+
         var url = $(this).data("url")
         var id = $(this).data("id");
         var src = $(this).attr("src");
@@ -46,6 +47,9 @@ $(function () {
     
     //click btn input text
     $("#btn_click").on("click",function () {
+        
+
+
         var selected_meme_name = $(".selected_meme").data("name");
         var selected_meme_url = $(".selected_meme").data("url");
         var templateID= $(".selected_meme").data("id");

@@ -19,13 +19,12 @@ $(function () {
         var id = $(this).data("id");
         var name = $(this).data('name');
         var price = $(this).data("price");
-        var qty = 1;
 
         var item = {
             id: id,
             name: name,
             price: price,
-            qty: qty
+            qty: 1
         }
 
         console.log(item);
@@ -34,24 +33,22 @@ $(function () {
 
         if(!cart){
             var item_array = new Array();
-            item_array.push(item);
         } else {
             var item_array = JSON.parse(cart);
-
-            for (let i = 0; i < item_array.length; i++) {
-                //const element = item_array[i];
-                if (item_array[i].id === id) {
-                    item_array[i].qty += qty++;
-                } else {
-                    var add = true;
-                }
-            }
         }
 
-        if (add == true) {
+        var stat = false;
+        $.each(item_array, function(i,v) {
+            if (v.id == id) {
+                v.qty++;
+                stat = true;
+                return false;
+            }
+        })
+
+        if(stat == false){
             item_array.push(item);
         }
-
 
         localStorage.setItem("cart",JSON.stringify(item_array));
         getData();
@@ -62,8 +59,10 @@ $(function () {
         var data  = "";
         
         if(!cart){
-            data += `Your Cart is Empty!`;
+            data += `<h2>Your Cart is Empty!</h2>`;
             $("#empty_div").html(data);
+            $("#table_div").hide();
+            $("#empty_div").show();
         } else {
             var cart_array = JSON.parse(cart);
             var total = 0;
@@ -85,8 +84,8 @@ $(function () {
                     </tr>`
 
             $("#cart_item").html(data);
+            $("#table_div").show();
+            $("#empty_div").hide();
         }
-
-        
     }
 })
