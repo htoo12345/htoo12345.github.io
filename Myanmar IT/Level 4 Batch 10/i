@@ -1,0 +1,88 @@
+<main>
+        <div class="container">
+            <!-- Assignment for html -->
+            <div class="assig_group" id="html">
+                <h4 class="h4">HTML</h4>
+                <a href="HTML/Link/index.html" title="Link" class="assignment">Assignment-1</a>
+                <br>
+                <a href="HTML/Table/index.html" title="Table" class="assignment">Assignment-2</a>
+                <br>
+                <a href="HTML/Idol/index.html" title="Idol" class="assignment">Assignment-3</a>
+                
+            </div>
+            <!-- Assignment for JS  -->
+            <div class="assig_group" id="js">
+                <h4 class="h4">JavaScript</h4>
+                <a href="JavaScript/examPass.html" title="Exam Result" class="assignment">Assignment-1</a>
+                <br>
+                <a href="JavaScript/multiplicationTable.html" title="Multiplication Table" class="assignment">Assignment-2</a>
+                <br>
+                <a href="JavaScript/reverseStar.html" title="Reverse Star" class="assignment">Assignment-3</a>
+                <br>
+                <a href="JavaScript/addData.html" title="Add Data with DOM" class="assignment">Assignment-4</a>
+                <br>
+                <a href="JavaScript/calculator.html" title="Calculator" class="assignment">Assignment-5</a>
+            </div>
+            <!-- Assignment for CSS  -->
+            <div class="assig_group" id="css">
+                <h4 class="h4">CSS</h4>
+                <a href="Florak_Shop/HTML/shop.html" class="assignment" title="Shop Page">Assignment-1</a>
+                <br>
+                <a href="Florak_Shop/HTML/About.html" class="assignment" title="About Page">Assignment-2</a>
+                <br>
+                <a href="Florak_Shop/HTML/Blog.html" class="assignment" title="Blog Page">Assignment-3</a>
+                <br>
+                <a href="Florak_Shop/HTML/index.html" class="assignment" title="Home Page">Floral Shop</a>
+            </div>
+            <!-- Assignment for DB  -->
+            <div class="assig_group" id="db">
+                <h4 class="h4">DataBase</h4>
+                <a href="Database/assignment/primaryKey.html" class="assignment" title="Primary Key">PrimaryKey</a>
+                <br>
+                <a href="Database/assignment/DDL_Assignment.sql" class="assignment">DDL Assignment</a>
+                <br>
+                <a href="Database/assignment/Data_Entry_Assignment.sql" class="assignment">Data Entry Assignemnt</a>
+                <br>
+                <a href="Database/assignment/CRUD_assignment.sql" class="assignment">CRUD assignment</a>
+                <br>
+                <a href="Database/assignment/Data_retrieval_asignment.sql" class="assignment">Data Retrieval Assignment</a>
+                <br>
+                <a href="Database/assignment/data_retrieval_assignment2.sql" class="assignment">Data Retrieval Assignment 2</a>
+            </div>
+            <!-- Assignemnt for C++  -->
+            <div class="assig_group" id="cpp">
+                <h4 class="h4">C++</h4>
+                <a href="CPP/Assignment/interest_assignment.cpp" class="assignment">Day 26 - A1</a>
+                <br>
+                <a href="CPP/Assignment/year_assignment.cpp" class="assignment">Day 26 - A2</a>
+                <br>
+                <a href="CPP/Assignment/discount_assignment.cpp" class="assignment">Day 26 - A3</a>
+                <br>
+                <a href="CPP/Assignment/pos_negat_assignment.cpp">Day 1 - A1</a>
+                <br>
+                <a href="CPP/Assignment/discount_ex1_assignment.cpp">Day 1 - A2</a>
+                <br>
+                <a href="CPP/Assignment/username_password_assignment.cpp">Day 1 - A3</a>
+                <br>
+                <a href="CPP/Assignment/eight_five_divis_assignment.cpp">Day 2 - A1</a>
+                <br>
+                <a href="CPP/Assignment/any_number_assignment.cpp">Day 2 - A2</a>
+                <br>
+                <a href="CPP/Assignment/sun_input_no_assignment.cpp">Day 2 - A2</a>
+                <br>
+                <a href="CPP/Assignment/Len_5_assignment.cpp">Day 7 - A1</a>
+                <br>
+                <a href="CPP/Assignment/item_assignment.cpp">Day 7 - A2</a>
+                <br>
+                <a href="CPP/Assignment/search_large_small_assignment.cpp">Day 14 - A1</a>
+                <br>
+                <a href="CPP/Assignment/Function1_assignment.cpp">Day 14 - A2</a>
+                <br>
+                <a href="CPP/Assignment/Function2_assignment.cpp">Day 14 - A3</a>
+                <br>
+                <a href="CPP/Assignment/OOP1_assignment.cpp">Day 21 - A1</a>
+                <br>
+                <a href="CPP/Assignment/OOP2_assignment.cpp">Day 21 - A2</a>
+            </div>
+        </div>
+    </main>

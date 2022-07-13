@@ -1,103 +1,81 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
-@font-face {
-    font-family: varela_round;
-    src: url(fonts/Varela_Round/VarelaRound-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&display=swap');
 
-@font-face {
-    font-family: signika_negative;
-    src: url(fonts/Signika_Negative/static/SignikaNegative-Bold.ttf);
-}
 
-@font-face {
-    font-family: pacifico;
-    src: url(fonts/Pacifico/Pacifico-Regular.ttf);
-}
-
-@font-face {
-    font-family: macondo;
-    src: url(fonts/Macondo/Macondo-Regular.ttf);
-}
 
 body{
-    /* background-color: lavenderblush; */
-    background-image: url(img/mountain.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: lightsteelblue;
 }
 
 nav{
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-.heading{
-    /* color: lightgreen;  */
-    color: white;
-    font-family: cursive;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 35px;
-}
-
-.container{
-    /* border: 1px solid tomato; */
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 5px; 
-}
-
-.assig_group{
-    /* border: 1px solid lavender; */
-    display: inline-block;
-    padding-left: 20px;
-
-}
-
-.assig_group h4{
-    /* color: rgb(189, 67, 67);  */
-    color: white;
-    font-family: cursive;
-    text-align: left;
-    padding-bottom: 20px;
-    font-size: 25px;
-}
-
-.assig_group a{
-    text-decoration: none;
-    display: inline-block;
-    padding-left: 30px;
-    padding-bottom: 20px;
-    font-family: signika_negative;
-    /* color: lightcoral; */
-    color: white;
-    font-size: 20px;
-}
-
-.assig_group a:hover{
-    font-family: pacifico;
-    color: red;
-    font-size: 25px;
-}
-
-.assig_group a:active{
-    font-family: macondo;
-    color: yellow;
-}
-
-#footer{
-    text-align: right;
+    width: 600px;
     margin: 20px;
 }
 
-#footer a{
-   padding: 20px;
-   text-decoration: none;
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
 }
 
+ul li a{
+    text-decoration: none;
+    color: lightcoral;
 
+    font-family: 'Edu TAS Beginner', cursive;
+}
 
+main{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #BFBFBF;
+    box-shadow: 5px 5px 1px #aaaaaa;
+    background-color: lightblue ;
+}
+
+.container{
+    width: 550px;
+}
+
+main .container .assig_group{
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.collection_link{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.collection_link a{
+    text-decoration: none;
+    color: lightcoral;
+    margin: 15px;
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid #BFBFBF;
+    box-shadow: 5px 5px 1px #aaaaaa;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.assig_group{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
