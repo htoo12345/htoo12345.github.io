@@ -99,7 +99,8 @@ img{
 }
 
 #table_div table{
-    width: 50%;
+    /* border: 1px solid saddlebrown; */
+    width: 80%;
     /* text-align: center; */
     border-collapse: collapse;
 }
@@ -108,4 +109,16 @@ th, td {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+}
+
+.btn_delete, .btn_add, .btn_remove{
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 1px solid #BFBFBF;
+    border-radius: 5px;
+}
+
+
+.btn_delete:hover, .btn_add:hover, .btn_remove:hover{
+    cursor: pointer;
 }

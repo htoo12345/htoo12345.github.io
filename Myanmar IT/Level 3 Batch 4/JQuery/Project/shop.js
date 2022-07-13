@@ -27,7 +27,7 @@ $(function () {
             qty: 1
         }
 
-        console.log(item);
+        //console.log(item);
 
         let cart = localStorage.getItem("cart");
 
@@ -70,17 +70,24 @@ $(function () {
                 total += v.qty * v.price;
 
                 data += `<tr>
-                        <td>${(i+1)}</td>
+                        <td>
+                            ${(i+1)}
+                            <button class="btn_delete" data-index="${i}">X</button>
+                        </td>
                         <td>${v.name}</td>
-                        <td>${v.price}</td>
-                        <td>${v.qty}</td>
-                        <td>${v.qty*v.price}</td>
+                        <td>$ ${numberFormat(v.price)}</td>
+                        <td class="td_qty">
+                            <button class="btn_add" data-index="${i}">+</button>
+                            ${v.qty}
+                            <button class="btn_remove" data-index="${i}">-</button>
+                        </td>
+                        <td>$ ${numberFormat(v.qty*v.price)}</td>
                         </tr>`
             })
 
             data += `<tr>
                         <td colspan = "4" id="total_td"> Total </td>
-                        <td>${total}</td>
+                        <td>$ ${numberFormat(total)}</td>
                     </tr>`
 
             $("#cart_item").html(data);
@@ -88,4 +95,90 @@ $(function () {
             $("#empty_div").hide();
         }
     }
-})
+    // // increase qty
+    // $("table").on("click", ".btn_add" , function (e) {
+    //     e.preventDefault();
+
+    //     let currentRow=$(this).closest("tr"); 
+         
+    //     let qty = currentRow.find("td:eq(3)").text(); // get current row 3st TD value
+    
+    //     alert(qty);
+    // });
+
+    // //decrease qty
+    // $("table").on("click", ".btn_remove", function (e) {
+    //     e.preventDefault();
+
+    //     let current_row = $(this).closest("tr");
+    //     let qty = current_row.find("td:eq(3)").text();
+    //     alert(qty);
+    // })
+
+    // increase qty
+    $("table").on("click", ".btn_add" ,function () {
+        let index = $(this).data("index");
+        //alert(index)
+        let cart_string = localStorage.getItem("cart");
+        let cart_array = JSON.parse(cart_string);
+        cart_array[index].qty++;
+        
+        localStorage.setItem("cart", JSON.stringify(cart_array));
+        getData();
+    });
+
+    //decrease qty
+    $("table").on("click", ".btn_remove", function () {
+        let index = $(this).data("index");
+        
+        let cart_string = localStorage.getItem("cart");
+        let cart_array = JSON.parse(cart_string);
+        console.log(cart_array);
+        if (cart_array[index].qty > 1) {
+            cart_array[index].qty--;
+        } else {
+            let status = confirm("Are you sure delete?");
+
+            if (status == true) {
+                cart_array.splice(index,1);
+            }
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart_array));
+        getData();
+    });
+
+    //remove row
+    $("table").on("click", ".btn_delete", function () {
+        let index = $(this).data("index");
+
+        // let cart_string = localStorage.getItem("cart");
+        // let cart_array = JSON.parse(cart_string);
+
+        // let status = confirm("Are you sure delete?");
+
+        // if (status == ture) {
+        //     cart_array.splice(index,5);
+
+        // }     
+        
+        // $(this).parent().remove();
+        $(this).closest("tr").remove();
+        
+        let cart_string = localStorage.getItem("cart");
+        let cart_array = JSON.parse(cart_string);
+
+        let status = confirm("Are you sure delete?");
+
+        if (status == true) {
+            cart_array.splice(index,1);
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart_array));
+        getData();
+    });
+
+    function numberFormat(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+});
