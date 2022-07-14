@@ -163,16 +163,21 @@ $(function () {
         // }     
         
         // $(this).parent().remove();
-        $(this).closest("tr").remove();
+        //$(this).closest("tr").remove();
+        let data = `<h2>Your Cart is Empty!</h2>`;
         
         let cart_string = localStorage.getItem("cart");
         let cart_array = JSON.parse(cart_string);
+
+        
 
         let status = confirm("Are you sure delete?");
 
         if (status == true) {
             cart_array.splice(index,1);
         }
+        
+        
 
         localStorage.setItem("cart", JSON.stringify(cart_array));
         getData();

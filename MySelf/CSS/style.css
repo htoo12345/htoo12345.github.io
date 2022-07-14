@@ -48,7 +48,7 @@ main{
 
     background-color: lightyellow;
     border-radius: 30px;
-    border: 1px solid #BFBFBF; 
+    border: 2px solid #BFBFBF; 
 
     display: flex;
     flex-direction: column;
@@ -56,7 +56,7 @@ main{
     align-items: center;
     align-content: space-around;
 
-    box-shadow: 10px 10px 5px #aaaaaa;   
+    box-shadow: 20px 20px 10px #aaaaaa;   
 }
 
 main #nav_id{
