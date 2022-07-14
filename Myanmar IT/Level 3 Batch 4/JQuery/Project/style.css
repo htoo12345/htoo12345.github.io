@@ -50,6 +50,12 @@ main{
     /* border: 1px solid darkblue; */
     margin: 30px 250px 10px 250px;
     /* display: none; */
+    background-image: linear-gradient(
+        to bottom right,
+        #ffbdb2,#1fffe1
+    );
+    padding: 30px;
+    border-radius: 25px;
 }
 
 .content{

@@ -18,11 +18,26 @@
     src: url(../Font/RubikMoonrocks-Regular.ttf);
 }
 
+@keyframes body {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
 body{
-    background-color: lightgoldenrodyellow;
-    /* border: 4px dotted darkcyan; */
-    /* height: 100%; */
+    background-image: linear-gradient(
+        to bottom right,
+        #ffbdb2,#1fffe1
+    );
+    /* animation: body 6s infinite ease-in-out;  */
     display: flex;
+    background-size: 200% 210%;
     justify-content: center;
     flex-wrap: wrap;
 }
