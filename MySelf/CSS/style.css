@@ -33,7 +33,8 @@
 body{
     background-image: linear-gradient(
         to bottom right,
-        #ffbdb2,#1fffe1
+        #a9f1df,
+        #ffbbbb
     );
     /* animation: body 6s infinite ease-in-out;  */
     display: flex;
