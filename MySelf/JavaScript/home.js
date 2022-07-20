@@ -1,0 +1,3 @@
+$(function () {
+    $("#container").slideDown("slow");
+})

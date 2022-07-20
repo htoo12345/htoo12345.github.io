@@ -4,13 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Counties</title>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- external js  -->
+    <script src="country.js"></script>
+    <script src="../jquery.min.js"></script>
+    <!-- fontaswone  -->
+    <link rel="stylesheet" href="../../../Level 4 Batch 10/Florak_Shop/fontawesome/css/all.min.css">
+    <script src="../../../Level 4 Batch 10/Florak_Shop/fontawesome/js/all.min.js"></script>
 </head>
 <body>
+    <!-- nav bar  -->
+    <nav id="nav_header">
+        <p>Where in the world?</p>
+    </nav>
+    <!-- nav bar  -->
+    <!-- -----------------  -->
+    <!-- main part  -->
     <main>
-        <div></div>
-        <div></div>
-        <div></div>
+        <nav>
+            <form action="search">
+                <input type="search" name="search" id="search" placeholder="Search for a country ...">
+
+                <select name="region" id="region">
+                    <option value="">Filter by region</option>
+                    <option value="1">Africa</option>
+                    <option value="2">America</option>
+                    <option value="3">Asia</option>
+                    <option value="4">Europe</option>
+                    <option value="5">Oceania</option>
+                </select>
+            </form>
+        </nav>
+        <article></article>
     </main>
+    <!-- main part  -->
 </body>
 </html>
