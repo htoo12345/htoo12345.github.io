@@ -19,7 +19,7 @@ body {
 }
 
 main {
-    /* border: 1px solid saddlebrown;  */
+    /* border: 1px solid saddlebrown;   */
     width: 400px;
     height: 500px;
 
@@ -42,4 +42,5 @@ main {
 #link_div {
     display: flex;
     justify-content: space-between;
+    padding-right: 45px;
 }
